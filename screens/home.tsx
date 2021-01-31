@@ -23,7 +23,7 @@ const Home = ({showCountryDetails, navigation}: Props) => {
         <TextInput onChangeText={(e)=> setCountry(e)} style={styles.inputBox} />
       </View>
       <View>
-        <Button onPress={getCountryDetails} title = "Submit" />
+        <Button onPress={getCountryDetails} title = "Submit" disabled={country.length === 0} />
       </View>
     </ScrollView>
   
